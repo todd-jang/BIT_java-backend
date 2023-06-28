@@ -44,7 +44,7 @@ public class Tv {
 		this.channel = channel;
 	}
 	public void channel (boolean up) {
-		channel(channel +(up ? 1 :_1));
+		channel(channel +(up ? 1 :_-1));
 	}
 	public void status() {
 		
