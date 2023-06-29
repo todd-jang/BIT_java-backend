@@ -16,7 +16,7 @@ public class StringTest02 {
 	}
 	public static boolean equalsHello(String s) {
 		//return S.equalsHello("Hello");보다는
-	  return "Hello".equals(s);
+	    return "Hello".equals(s);
 		
 	}
 
