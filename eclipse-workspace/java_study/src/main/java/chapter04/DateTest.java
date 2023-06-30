@@ -36,6 +36,6 @@ public class DateTest {
 		System.out.println(
 			(year+1900)+"-" +
 			(month>9? +"-" +
-			()		;
+			 );
 	}
 	
