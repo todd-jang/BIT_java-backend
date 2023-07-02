@@ -1,15 +1,14 @@
-package paint;
+package com.bitacademy.paint.shape;
 
-public class Rectangle {
-	private String lineColor;
-	private String fillColor;
+import com.bitacademy.paint.point.Point;
+
+public class Tria extends Shape {
+
 	private int x1, y1;
 	private int x2, y2;
 	private int x3, y3;
-	private int x4, y4;
 	
-	public void draw();
-
+	
 	public String getLineColor() {
 		return lineColor;
 	}
@@ -74,4 +73,31 @@ public class Rectangle {
 		this.y3 = y3;
 	}
 		System.out.println()
+	public static void main(String[] args) {
+		paint.point point=new Point();
+		point.setX(100));
+		point.setY(50);
+		drawPoint(point);
+		
+		paint.point point2=new Point(200,150);
+		point.setX(100));
+		point.setY(50);
+		drawPoint(point2);//?
+		
+		
+		Rectangle rectangle =new Rectagle();
+		drawRectangle.draw(rectangle);	
+
+		Tria tria =new Tria();
+		drawTria.draw(trai);	
+	
+	public static void drawPoint(Point point) {
+		point.show();
+	}
+	public static void drawRectangle(Rectangle rectangle) {
+		rectangle.draw();
+	}	
+	public static void drawTria(Tria tria) {;
+		tria.draw();
+	}	
 }

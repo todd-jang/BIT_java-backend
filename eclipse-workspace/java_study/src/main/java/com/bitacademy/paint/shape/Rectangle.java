@@ -1,21 +1,19 @@
-package paint;
+package com.bitacademy.paint.shape;
 
-import com.bitacademy.paint.i.Drawable;
-
-public abstract class Shape implements Drawable {
+public class Rectangle {
 	private String lineColor;
 	private String fillColor;
+	private int x1, y1;
+	private int x2, y2;
+	private int x3, y3;
+	private int x4, y4;
 	
-//	public abstract void draw();
-	
+	public void draw();
+
 	public String getLineColor() {
 		return lineColor;
 	}
-	
-	@Override
-	public void draw () {
-		Syste.out.println("원 그렸습니다");
-	}
+
 	public void setLineColor(String lineColor) {
 		this.lineColor = lineColor;
 	}

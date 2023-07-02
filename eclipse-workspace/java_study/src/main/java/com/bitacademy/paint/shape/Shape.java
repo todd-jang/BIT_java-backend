@@ -1,18 +1,21 @@
-package paint;
+package com.bitacademy.paint.shape;
 
-import com.bitacademy.paint.point.Point;
+import com.bitacademy.paint.i.Drawable;
 
-public class Tria extends Shape {
-
-	private int x1, y1;
-	private int x2, y2;
-	private int x3, y3;
+public abstract class Shape implements Drawable {
+	private String lineColor;
+	private String fillColor;
 	
+//	public abstract void draw();
 	
 	public String getLineColor() {
 		return lineColor;
 	}
-
+	
+	@Override
+	public void draw () {
+		Syste.out.println("원 그렸습니다");
+	}
 	public void setLineColor(String lineColor) {
 		this.lineColor = lineColor;
 	}
@@ -73,31 +76,4 @@ public class Tria extends Shape {
 		this.y3 = y3;
 	}
 		System.out.println()
-	public static void main(String[] args) {
-		paint.point point=new Point();
-		point.setX(100));
-		point.setY(50);
-		drawPoint(point);
-		
-		paint.point point2=new Point(200,150);
-		point.setX(100));
-		point.setY(50);
-		drawPoint(point2);//?
-		
-		
-		Rectangle rectangle =new Rectagle();
-		drawRectangle.draw(rectangle);	
-
-		Tria tria =new Tria();
-		drawTria.draw(trai);	
-	
-	public static void drawPoint(Point point) {
-		point.show();
-	}
-	public static void drawRectangle(Rectangle rectangle) {
-		rectangle.draw();
-	}	
-	public static void drawTria(Tria tria) {;
-		tria.draw();
-	}	
 }
