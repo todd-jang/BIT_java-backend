@@ -1,34 +1,24 @@
-<%@ page language="java" contentType "text/html"; charset="UTF-8"
-	pageEncoding="UTF-8"%>
-<html>	
-<form action = "join.jsp" method="post"">
-	<label>ì´ë©ì¼:</label>
-	<input type=""text" name="email">
-    
-    <br><br>
-    <label>ë¹ë°ë³í¸:</label>
-    <input type="password" name="password">
-    
-    <br><br>
-    <label>ìë:</label>
-    <select name=""birthYear">
-    	<option value="2000">2000ë</option>
-    	<option value="2001">2001ë</option>
-    </select>
-    	
-    <br><br>
-    <label>ì±ë³:</label>
-    ì¬ì<input type="radio" name="gender" value="female" checked="checked">
-    
-    <br><br>
-    <label>ìê¸°ìê°:</label>
-    <textarea name="profile"></textarea>
-    
-    <br><br>
-    
-    <label>ì·¨ë¯¸</label>
-    <input type=""
-    
-    
-</form>
+﻿<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>메일 리스트 가입</h1>
+	<p>
+		메일 리스트에 가입하려면,<br>
+		아래 항목을 기입하고 submit 버튼을 클릭하세요.
+	</p>
+	<form action="/emaillist01/add.jsp" method="post">
+	    First name: <input type="text" name="fn" value="" ><br>
+	    Last name: <input type="text" name="ln" value=""><br>
+	    Email address: <input type="text" name="email" value=""><br>
+	    <input type="submit" value="submit">
+	</form>
+	<br>
+	<p>
+		<a href="/emaillist01">리스트 바로가기</a>
+	</p>
+</body>
 </html>
